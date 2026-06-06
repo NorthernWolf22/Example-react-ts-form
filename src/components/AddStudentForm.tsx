@@ -61,15 +61,15 @@ const AddStudentForm = ({addStudent} : AddStudentFormProps) => {
             />
             <input
                 type="text"
-                placeholder="e.g. John"
-                name="firstName"
+                placeholder="e.g. Doe"
+                name="lastName"
                 value={formData.lastName}
                 onChange={(e) => handleInputChanges(e)}
             />
             <input
                 type="text"
-                placeholder="e.g. John"
-                name="firstName"
+                placeholder="e.g. JohnDoe@gmail.com"
+                name="email"
                 value={formData.email}
                 onChange={(e) => handleInputChanges(e)}
             />
