@@ -4,6 +4,7 @@ import { type Student } from "./types/student-types.ts";
 
 //components
 import AddStudentForm from "./components/AddStudentForm.tsx";
+import StudentList from "./components/StudentList.tsx";
 
 function App() {
   //<Student[]> is a generic type, it indicates the type of state stored, in this case an array containing student objects
@@ -25,6 +26,8 @@ function App() {
       <h1>Example react & typescript form</h1>
       {/* Pass addStudent function as prop */}
       <AddStudentForm addStudent={addStudent} />
+      {/* Pass the students array as prop */}
+      <StudentList students={students} />
     </div>
   )
 }

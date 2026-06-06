@@ -32,7 +32,7 @@ const AddStudentForm = ({addStudent} : AddStudentFormProps) => {
 
     //this defines the event 'e' as a form submission event coming from a form element, because of this the preventDefault method is is accessible.
     const handleSubmitStudentForm = (e: React.SubmitEvent<HTMLFormElement>) => {
-        e.preventDefault;
+        e.preventDefault();
 
         //collect form data values and submit as the addStudent function's argument
         addStudent({
