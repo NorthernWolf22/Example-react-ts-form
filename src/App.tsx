@@ -21,13 +21,20 @@ function App() {
     });
   });
 
+
+  const deleteStudent = ((student: Student): void => {
+    setStudents((prevStudents) => {
+      return prevStudents.filter(prevStudent => prevStudent.id !== student.id)  //check each item in the students array, if the items id does not match the parameters id then it is retained, the one that matches is discarded
+    });
+  });
+
   return (
     <div>
       <h1>Example react & typescript form</h1>
       {/* Pass addStudent function as prop */}
       <AddStudentForm addStudent={addStudent} />
       {/* Pass the students array as prop */}
-      <StudentList students={students} />
+      <StudentList students={students} deleteStudent={deleteStudent} />
     </div>
   )
 }

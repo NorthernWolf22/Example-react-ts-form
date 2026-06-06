@@ -3,19 +3,23 @@ import { type Student } from "../types/student-types";
 //this defines the type alias of any props passed in to the student list component. The students prop is an array which can only contain Student type 
 type StudentListProps = {
     students: Student[];
+    deleteStudent: (student: Student) => void;
 }
 
 //this defines the students prop and declares it as type 'StudentListProps'
-const StudentList = ({students} : StudentListProps) => {
+const StudentList = ({students, deleteStudent} : StudentListProps) => {
     return ( 
-        <ul>
+        <div>
             {
                 students &&
                 students.map((student) => (
-                    <li key={student.id}>{`${student.firstName} ${student.lastName}, ${student.email}`}</li>
+                    <div key={student.id}>
+                        {`${student.firstName} ${student.lastName}, ${student.email}`}
+                        <button type="button" onClick={(e) => deleteStudent(student)}>Delete</button>
+                    </div>
                 ))
             }
-        </ul>
+        </div>
     );
 }
  
