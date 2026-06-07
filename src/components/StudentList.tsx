@@ -15,7 +15,7 @@ const StudentList = ({students, deleteStudent} : StudentListProps) => {
                 students.map((student) => (
                     <div key={student.id}>
                         {`${student.firstName} ${student.lastName}, ${student.email}`}
-                        <button type="button" onClick={(e) => deleteStudent(student)}>Delete</button>
+                        <button type="button" onClick={() => deleteStudent(student)}>Delete</button>
                     </div>
                 ))
             }
