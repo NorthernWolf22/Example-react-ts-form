@@ -1,0 +1,15 @@
+@use "../primatives/" as p;
+
+//styles for the student form module
+
+.studentFormModule {
+    padding: var(--module-padd-y-small);
+
+    &__heading {
+        margin-bottom: p.$spacing-500;
+    }
+
+    .button {
+        margin-top: p.$spacing-500;
+    }
+}

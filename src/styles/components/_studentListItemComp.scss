@@ -1,0 +1,13 @@
+@use "../primatives/" as p;
+
+// styles for student list item
+
+.studentListItemComp {
+    border: var(--border-width-thin) solid var(--colour-border-accent-strong);
+    padding: var(--list-item-padding-y) var(--list-item-padding-x);
+    border-radius: var(--border-radius-medium);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: p.$spacing-500;
+}
