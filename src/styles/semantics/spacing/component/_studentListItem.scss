@@ -1,0 +1,8 @@
+@use "../../../primatives/" as p;
+
+//semantic component spacing variables
+
+:root {
+    --list-item-padding-y: #{p.$spacing-400};
+    --list-item-padding-x: #{p.$spacing-400};
+}

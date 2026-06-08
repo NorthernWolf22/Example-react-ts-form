@@ -1,0 +1,83 @@
+//styles for single input field
+
+@use "../primatives/" as p;
+
+//single input styles
+label {
+    font-size: var(--form-label-font);
+    line-height: var(--form-label-line);
+}
+
+.input {
+    border: 0.1rem solid var(--colour-border-muted);
+    padding: var(--form-input-padding-y) var(--form-input-padding-x);
+    margin-top: var(--form-label-to-input-gap);
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &::placeholder {
+        font-size: var(--form-label-small-font);
+        line-height: var(--font-label-small-line);
+        color: var(--colour-text-subtle);
+    }
+
+    &:focus-visible {
+        outline: transparent;
+        //f-visible only applied when tabbed to or using assistive tech
+        box-shadow:
+            0 0 0 0.2rem var(--colour-border-focus-inner),
+            0 0 0 0.4rem var(--colour-border-focus-outer);
+    }
+
+    &:hover {
+        border-color: var(--colour-border-accent-strong);
+    }
+}
+
+.input__wrapper:not(:last-of-type) { //all input__wrapper have margin except the last one
+    margin-bottom: p.$spacing-600;
+}
+
+.input__wrapper {    
+    &--error {
+        
+        .input__message {
+            margin-top: var(--form-input-to-feedback-gap);
+            color: var(--colour-text-danger);
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            
+            .icon {
+                margin-right: p.$spacing-200;
+                display: inline-block;//IS THIS STILL REQUIRED> CHECK?
+            }
+
+            p {
+                font-size: var(--form-label-small-font);
+                line-height: var(--form-label-small-line);
+                margin: 0;
+            }
+        }
+
+        .input {
+            border-color: var(--colour-border-danger);
+            background-color: var(--colour-background-danger);
+
+            &::placeholder {
+                color: var(--colour-text-danger);
+            }
+        }
+
+        .textarea {
+            border-color: var(--colour-border-danger);
+            background-color: var(--colour-background-danger);
+
+            &::placeholder {
+                color: var(--colour-text-danger);
+            }            
+        }
+    }
+}
