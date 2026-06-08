@@ -3,10 +3,9 @@ import { classList } from "react-classlist-helper";
 
 type SingleInputCompProps = {
     label: string;
-    labelId: string;
 } & InputHTMLAttributes<HTMLInputElement>;
 
-const SingleInputComp = ({ label, labelId, type, id, name, value, required, placeholder, className, onChange } : SingleInputCompProps) => {
+const SingleInputComp = ({ label, type, id, name, value, required, placeholder, className, onChange } : SingleInputCompProps) => {
 
     const classMap = {
         "input": true,
@@ -15,7 +14,7 @@ const SingleInputComp = ({ label, labelId, type, id, name, value, required, plac
 
     return (
         <>
-            <label htmlFor={name} id={labelId}>{required ? "* " : ""} {label}</label>
+            <label htmlFor={id}>{required ? "* " : ""} {label}</label>
             <input
                 type={type}
                 id={id}

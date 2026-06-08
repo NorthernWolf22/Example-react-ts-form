@@ -64,8 +64,8 @@ const AddStudentForm = ({heading, addStudent} : AddStudentFormProps) => {
                             <div className="h3 center studentFormModule__heading">{heading}</div>
                             <div className="input__wrapper">
                                 <SingleInputComp 
+                                    id="student-first-name"
                                     label="First name"
-                                    labelId="firstName"
                                     type="text"
                                     placeholder="e.g. John"
                                     name="firstName"
@@ -76,8 +76,8 @@ const AddStudentForm = ({heading, addStudent} : AddStudentFormProps) => {
                             </div>
                             <div className="input__wrapper">
                                 <SingleInputComp 
+                                    id="student-last-name"
                                     label="Last name"
-                                    labelId="lastName"
                                     type="text"
                                     placeholder="e.g. Doe"
                                     name="lastName"
@@ -88,8 +88,8 @@ const AddStudentForm = ({heading, addStudent} : AddStudentFormProps) => {
                             </div>
                             <div className="input__wrapper">
                                 <SingleInputComp 
+                                    id="student-email"
                                     label="Email"
-                                    labelId="email"
                                     type="text"
                                     placeholder="e.g. JohnDoe@gmail.com"
                                     name="email"
