@@ -3,7 +3,7 @@ import { classList } from "react-classlist-helper";
 
 type ButtonCompProps = {
     title: string;
-    variant?: string;
+    variant: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 
