@@ -33,7 +33,7 @@
   <li><strong>Type alias - </strong><p>Created and maintained custom TypeScript type aliases using the type keyword</p></li>
   <li><strong>Data modelling - </strong><p>Defined a reusable Student data model to enforce consistent object structures throughout the application</p></li>
   <li><strong>Type imports - </strong><p>Imported types using TypeScript's import type syntax to separate type checking from runtime imports</p></li>
-  <li><strong>Strongly typed - </strong><p>Applied strong typing to React state using generic types (useState<Student[]>)</p></li>
+  <li><strong>Strongly typed - </strong><p>Applied strong typing to React state using generic types (useState < Student[]>)</p></li>
   <li><strong>Prop types - </strong><p>Defined custom prop type aliases within components</p></li>
   <li><strong>Parameter types - </strong><p>Typed function parameters to enforce the structure of the expected incoming arguments</p></li>
   <li><strong>Function returns - </strong><p>Explicitly declared function return types (void) for improved code clarity and type safety</p></li>
