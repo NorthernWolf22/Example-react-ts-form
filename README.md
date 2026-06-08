@@ -12,7 +12,7 @@
 </ul>
 
 <h3>Overview</h3>
-<p>I have developed a responsive React and TypeScript CRUD application using a modular structure with reusable components and state management. Custom type alias', prop type alias', function parameter and event type checks ensure application wide type safety.</p>
+<p>I have developed a responsive React and TypeScript CRUD application using a modular structure with reusable components and state management. Custom type aliases, prop type aliases, function parameter and event type checks ensure application wide type safety.</p>
 
 <h3>Tech stack</h3>
 
